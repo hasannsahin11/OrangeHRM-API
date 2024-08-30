@@ -4,15 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="" />
+    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="New dependencies added for assertions &amp; serialization/deserialization">
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/features/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/config/ApiTestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hasannsahin11&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hasannsahin11/OrangeHRM-API.git&quot;,
+    &quot;accountId&quot;: &quot;b2758b6b-c464-4748-9568-24a1c714cf8f&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2lK4OuGRVZyhZRIMJGFbJjQxVOI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -22,9 +51,38 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true"
+    "TestNG.Login.adminLogin.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/hasan/IdeaProjects/OrangeHRM"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Login.adminLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OrangeHRM-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.features" />
+      <option name="MAIN_CLASS_NAME" value="api.features.Login" />
+      <option name="METHOD_NAME" value="adminLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.Login.adminLogin" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -34,6 +92,29 @@
       <option name="presentableId" value="Default" />
       <updated>1724915407727</updated>
     </task>
+    <task id="LOCAL-00001" summary="Project structure created">
+      <option name="closed" value="true" />
+      <created>1724916284771</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724916284771</updated>
+    </task>
+    <task id="LOCAL-00002" summary="New dependencies added for assertions &amp; serialization/deserialization">
+      <option name="closed" value="true" />
+      <created>1724916968807</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724916968807</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="OrangeHRM API framework has been created." />
+    <MESSAGE value="Project structure created" />
+    <MESSAGE value="New dependencies added for assertions &amp; serialization/deserialization" />
+    <option name="LAST_COMMIT_MESSAGE" value="New dependencies added for assertions &amp; serialization/deserialization" />
   </component>
 </project>

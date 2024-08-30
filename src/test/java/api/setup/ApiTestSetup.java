@@ -1,4 +1,4 @@
-package api.config;
+package api.setup;
 
 import io.restassured.RestAssured;
 
