@@ -26,7 +26,9 @@ public class ExtractToken {
             if (req.getUrl().contains("/validate")) {
                 String postData = req.getPostData().orElse("");
                 if (postData.contains("_token")) {
-                    System.out.println("Captured _token in request: " + postData);
+                    // Extract the _token from the postData
+                   String csrfToken = postData.split("_token=")[1].split("&")[0];
+                    System.out.println("Captured _token: " + csrfToken);
                 }
             }
         });

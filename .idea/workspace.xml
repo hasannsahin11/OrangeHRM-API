@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="Selenium added to obtain _token manually due to embedded CSRF">
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/setup/ExtractToken.java" afterDir="false" />
+    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="_token cpature with Selenium has been completed.">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/features/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/features/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/setup/ExtractToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/ExtractToken.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +57,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.ExtractToken.executor": "Run",
     "Application.SeleniumLogin.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.ApiTestSetup.adminLogin.executor": "Run",
     "TestNG.ApiTestSetup.essAccountCreation.executor": "Run",
     "TestNG.ApiTestSetup.executor": "Run",
@@ -70,7 +75,7 @@
     "settings.editor.selected.configurable": "inlay.hints"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ExtractToken">
+  <component name="RunManager" selected="TestNG.Login.essAccountCreation">
     <configuration name="ExtractToken" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="api.setup.ExtractToken" />
       <module name="OrangeHRM-API" />
@@ -115,24 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTestSetup.essAccountCreation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OrangeHRM-API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.setup.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api.setup" />
-      <option name="MAIN_CLASS_NAME" value="api.setup.ApiTestSetup" />
-      <option name="METHOD_NAME" value="essAccountCreation" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ApiTestSetup.loginWithToken" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRM-API" />
       <extension name="coverage">
@@ -151,13 +138,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Login.essAccountCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OrangeHRM-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.features" />
+      <option name="MAIN_CLASS_NAME" value="api.features.Login" />
+      <option name="METHOD_NAME" value="essAccountCreation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Login.essAccountCreation" />
         <item itemvalue="Application.ExtractToken" />
         <item itemvalue="Application.SeleniumLogin" />
         <item itemvalue="TestNG.ApiTestSetup.adminLogin" />
         <item itemvalue="TestNG.ApiTestSetup.loginWithToken" />
-        <item itemvalue="TestNG.ApiTestSetup.essAccountCreation" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725073979703</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="_token cpature with Selenium has been completed.">
+      <option name="closed" value="true" />
+      <created>1725080252206</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725080252206</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -211,6 +224,7 @@
     <MESSAGE value="New dependencies added for assertions &amp; serialization/deserialization" />
     <MESSAGE value="Login test performed and past" />
     <MESSAGE value="Selenium added to obtain _token manually due to embedded CSRF" />
-    <option name="LAST_COMMIT_MESSAGE" value="Selenium added to obtain _token manually due to embedded CSRF" />
+    <MESSAGE value="_token cpature with Selenium has been completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="_token cpature with Selenium has been completed." />
   </component>
 </project>

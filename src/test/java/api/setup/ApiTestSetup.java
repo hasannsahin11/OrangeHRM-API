@@ -1,11 +1,8 @@
 package api.setup;
 
 import api.models.EssUser;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.http.Cookie;
 import io.restassured.http.Cookies;
-import io.restassured.response.Response;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,29 +10,29 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.v85.network.Network;
 import org.openqa.selenium.devtools.v85.network.model.Request;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
-import javax.swing.text.Document;
-import javax.swing.text.Element;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Optional;
 
+import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
+
 
 public class ApiTestSetup {
 
-    WebDriver driver;
-    String csrfToken;
-    String sessionCookie;
+    public WebDriver driver;
+    protected String csrfToken;
+    protected String sessionCookie;
 
     @BeforeClass
-    public void setup() {
+    public void adminLogin() {
+        baseURI = "https://opensource-demo.orangehrmlive.com";
+
         ChromeOptions options = new ChromeOptions();
-        ChromeDriver driver = new ChromeDriver(options);
-        DevTools devTools = driver.getDevTools();
+        driver = new ChromeDriver(options);
+        DevTools devTools = ((ChromeDriver) driver).getDevTools();
         devTools.createSession();
 
         devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
@@ -59,7 +56,7 @@ public class ApiTestSetup {
 
             Thread.sleep(2000);
 
-
+            // Perform the login
             driver.findElement(By.cssSelector("input[name='username']")).sendKeys("Admin");
             driver.findElement(By.cssSelector("input[name='password']")).sendKeys("admin123");
             driver.findElement(By.cssSelector("button[type='submit']")).click();
@@ -74,28 +71,12 @@ public class ApiTestSetup {
             e.printStackTrace();
         }
 
+    }
 
-//    @Test(dependsOnMethods = {"adminLogin"})
-//    public void essAccountCreation() {
-//
-//        EssUser essUser = new EssUser();
-//        essUser.setEmpNumber(22);
-//        essUser.setPassword("SShaheen11");
-//        essUser.setStatus(true);
-//        essUser.setUsername("SShaheen11");
-//        essUser.setUserRoleId(2);
-//
-//        given()
-//                .body(essUser)
-//                .contentType(ContentType.JSON)
-//                .cookies(cookies)
-//
-//                .when()
-//                .post("/web/index.php/api/v2/admin/users")
-//
-//                .then()
-//                .statusCode(200)
-//                .log().body();
-//    }
+    @AfterClass
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
-    }
+}
