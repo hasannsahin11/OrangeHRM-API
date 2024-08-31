@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="New dependencies added for assertions &amp; serialization/deserialization">
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/features/Login.java" afterDir="false" />
+    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="Login test performed and past">
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/models/EssUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/config/ApiTestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/features/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/features/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +37,9 @@
     &quot;accountId&quot;: &quot;b2758b6b-c464-4748-9568-24a1c714cf8f&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/api/features/Login.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -51,15 +55,92 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.ApiTestSetup.adminLogin.executor": "Run",
+    "TestNG.ApiTestSetup.essAccountCreation.executor": "Run",
+    "TestNG.ApiTestSetup.executor": "Run",
+    "TestNG.ApiTestSetup.loginWithToken.executor": "Run",
     "TestNG.Login.adminLogin.executor": "Run",
+    "TestNG.Login.essAccountCreation.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/hasan/IdeaProjects/OrangeHRM"
+    "last_opened_file_path": "C:/Users/hasan/IdeaProjects/OrangeHRM",
+    "settings.editor.selected.configurable": "inlay.hints"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="Login.adminLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ApiTestSetup.adminLogin">
+    <configuration name="ApiTestSetup" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OrangeHRM-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.setup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.setup" />
+      <option name="MAIN_CLASS_NAME" value="api.setup.ApiTestSetup" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTestSetup.adminLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OrangeHRM-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.setup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.setup" />
+      <option name="MAIN_CLASS_NAME" value="api.setup.ApiTestSetup" />
+      <option name="METHOD_NAME" value="adminLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTestSetup.essAccountCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OrangeHRM-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.setup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.setup" />
+      <option name="MAIN_CLASS_NAME" value="api.setup.ApiTestSetup" />
+      <option name="METHOD_NAME" value="essAccountCreation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTestSetup.loginWithToken" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OrangeHRM-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.setup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.setup" />
+      <option name="MAIN_CLASS_NAME" value="api.setup.ApiTestSetup" />
+      <option name="METHOD_NAME" value="loginWithToken" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Login.essAccountCreation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRM-API" />
       <extension name="coverage">
         <pattern>
@@ -69,7 +150,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="api.features" />
       <option name="MAIN_CLASS_NAME" value="api.features.Login" />
-      <option name="METHOD_NAME" value="adminLogin" />
+      <option name="METHOD_NAME" value="essAccountCreation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -79,7 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Login.adminLogin" />
+        <item itemvalue="TestNG.ApiTestSetup.adminLogin" />
+        <item itemvalue="TestNG.ApiTestSetup.loginWithToken" />
+        <item itemvalue="TestNG.ApiTestSetup.essAccountCreation" />
+        <item itemvalue="TestNG.ApiTestSetup" />
+        <item itemvalue="TestNG.Login.essAccountCreation" />
       </list>
     </recent_temporary>
   </component>
@@ -108,13 +193,22 @@
       <option name="project" value="LOCAL" />
       <updated>1724916968807</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Login test performed and past">
+      <option name="closed" value="true" />
+      <created>1725000306251</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725000306251</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="OrangeHRM API framework has been created." />
     <MESSAGE value="Project structure created" />
     <MESSAGE value="New dependencies added for assertions &amp; serialization/deserialization" />
-    <option name="LAST_COMMIT_MESSAGE" value="New dependencies added for assertions &amp; serialization/deserialization" />
+    <MESSAGE value="Login test performed and past" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login test performed and past" />
   </component>
 </project>
