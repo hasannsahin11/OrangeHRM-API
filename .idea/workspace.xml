@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="ESS account creation test is completed &amp; validated.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="ESS Login test completed.">
       <change beforePath="$PROJECT_DIR$/src/test/java/api/features/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/features/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +63,7 @@
     "TestNG.ApiTestSetup.loginWithToken.executor": "Run",
     "TestNG.Login.adminLogin.executor": "Run",
     "TestNG.Login.essAccountCreation.executor": "Run",
+    "TestNG.Login.essLogin.executor": "Run",
     "TestNG.Login.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -218,7 +219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725083401441</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ESS Login test completed.">
+      <option name="closed" value="true" />
+      <created>1725252387251</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725252387251</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -229,6 +238,7 @@
     <MESSAGE value="Selenium added to obtain _token manually due to embedded CSRF" />
     <MESSAGE value="_token cpature with Selenium has been completed." />
     <MESSAGE value="ESS account creation test is completed &amp; validated." />
-    <option name="LAST_COMMIT_MESSAGE" value="ESS account creation test is completed &amp; validated." />
+    <MESSAGE value="ESS Login test completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="ESS Login test completed." />
   </component>
 </project>
