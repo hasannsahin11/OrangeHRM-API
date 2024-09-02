@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="_token cpature with Selenium has been completed.">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="ESS account creation test is completed &amp; validated.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/features/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/features/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/setup/ExtractToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/ExtractToken.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +63,7 @@
     "TestNG.ApiTestSetup.loginWithToken.executor": "Run",
     "TestNG.Login.adminLogin.executor": "Run",
     "TestNG.Login.essAccountCreation.executor": "Run",
+    "TestNG.Login.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -75,7 +71,7 @@
     "settings.editor.selected.configurable": "inlay.hints"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.Login.essAccountCreation">
+  <component name="RunManager" selected="TestNG.Login.essLogin">
     <configuration name="ExtractToken" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="api.setup.ExtractToken" />
       <module name="OrangeHRM-API" />
@@ -102,36 +98,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTestSetup.adminLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Login" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRM-API" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="api.setup.*" />
+          <option name="PATTERN" value="api.features.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="api.setup" />
-      <option name="MAIN_CLASS_NAME" value="api.setup.ApiTestSetup" />
-      <option name="METHOD_NAME" value="adminLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTestSetup.loginWithToken" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OrangeHRM-API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.setup.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api.setup" />
-      <option name="MAIN_CLASS_NAME" value="api.setup.ApiTestSetup" />
-      <option name="METHOD_NAME" value="loginWithToken" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="api.features" />
+      <option name="MAIN_CLASS_NAME" value="api.features.Login" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -156,13 +133,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Login.essLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OrangeHRM-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.features" />
+      <option name="MAIN_CLASS_NAME" value="api.features.Login" />
+      <option name="METHOD_NAME" value="essLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Login.essLogin" />
+        <item itemvalue="TestNG.Login" />
         <item itemvalue="TestNG.Login.essAccountCreation" />
         <item itemvalue="Application.ExtractToken" />
         <item itemvalue="Application.SeleniumLogin" />
-        <item itemvalue="TestNG.ApiTestSetup.adminLogin" />
-        <item itemvalue="TestNG.ApiTestSetup.loginWithToken" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725080252206</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ESS account creation test is completed &amp; validated.">
+      <option name="closed" value="true" />
+      <created>1725083401441</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725083401441</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -225,6 +228,7 @@
     <MESSAGE value="Login test performed and past" />
     <MESSAGE value="Selenium added to obtain _token manually due to embedded CSRF" />
     <MESSAGE value="_token cpature with Selenium has been completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="_token cpature with Selenium has been completed." />
+    <MESSAGE value="ESS account creation test is completed &amp; validated." />
+    <option name="LAST_COMMIT_MESSAGE" value="ESS account creation test is completed &amp; validated." />
   </component>
 </project>

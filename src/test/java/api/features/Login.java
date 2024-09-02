@@ -13,9 +13,10 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
-
 public class Login extends ApiTestSetup {
 
+    Cookies cookies;
+    EssUser essUser = new EssUser();
 
     @Test
     public void essAccountCreation() {
@@ -26,7 +27,6 @@ public class Login extends ApiTestSetup {
                 .build();
 
 
-        EssUser essUser = new EssUser();
         essUser.setEmpNumber(22);
         essUser.setPassword("SShaheen11");
         essUser.setStatus(true);
@@ -56,5 +56,26 @@ public class Login extends ApiTestSetup {
                 .then()
                 .statusCode(200)
                 .log().body();
+    }
+
+    @Test
+    public void essLogin() {
+
+        Map<String, String> credentials = new HashMap<>();
+        credentials.put("username", "SHaheen11");
+        credentials.put("password", "SHaheen11");
+
+        cookies = given()
+                .contentType(ContentType.JSON)
+                .body(credentials)
+                .log().body()
+
+                .when()
+                .post("/web/index.php/auth/validate")
+
+                .then()
+                .log().body()
+                .statusCode(302)
+                .extract().response().getDetailedCookies();
     }
 }
