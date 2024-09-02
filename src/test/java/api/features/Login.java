@@ -1,10 +1,8 @@
 package api.features;
 
 
-import api.models.EssUser;
-import api.setup.ApiTestSetup;
+import api.setup.Setup;
 import io.restassured.http.ContentType;
-import io.restassured.http.Cookie;
 import io.restassured.http.Cookies;
 import org.testng.annotations.Test;
 
@@ -13,7 +11,7 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
-public class Login extends ApiTestSetup {
+public class Login extends Setup {
 
     Cookies cookies;
 
@@ -25,16 +23,16 @@ public class Login extends ApiTestSetup {
         credentials.put("password", "SHaheen11");
 
         cookies = given()
-                .contentType(ContentType.JSON)
                 .body(credentials)
-//                .log().body()
+                .spec(requestSpec)
 
                 .when()
                 .post("/web/index.php/auth/validate")
 
                 .then()
-                .log().body()
                 .statusCode(302)
+                .spec(responseSpec)
+                .contentType(ContentType.HTML)
                 .extract().response().getDetailedCookies();
     }
 }

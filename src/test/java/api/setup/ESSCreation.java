@@ -31,6 +31,7 @@ public class ESSCreation {
     public void adminLogin() {
         ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver(options);
+        driver.manage().window().maximize();
         DevTools devTools = ((ChromeDriver) driver).getDevTools();
         devTools.createSession();
 

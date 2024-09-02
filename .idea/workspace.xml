@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="Project structure updated.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/setup/ESSCreation.java" afterDir="false" />
+    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="Project setup class modified.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/features/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/features/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/Setup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/setup/ESSCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/ESSCreation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +64,7 @@
     "TestNG.ApiTestSetup.executor": "Run",
     "TestNG.ApiTestSetup.loginWithToken.executor": "Run",
     "TestNG.ESSCreation.ESSCUserCreation.executor": "Run",
+    "TestNG.ESSCreation.executor": "Run",
     "TestNG.Login.adminLogin.executor": "Run",
     "TestNG.Login.essAccountCreation.executor": "Run",
     "TestNG.Login.essLogin.executor": "Run",
@@ -71,13 +72,12 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/hasan/IdeaProjects/Java",
+    "last_opened_file_path": "C:/Users/hasan/IdeaProjects/OrangeHRM",
     "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RunManager" selected="TestNG.Login.essLogin">
-    <configuration name="ExtractToken" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="api.setup.ExtractToken" />
+    <configuration name="ESSCreation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRM-API" />
       <extension name="coverage">
         <pattern>
@@ -85,6 +85,11 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="api.setup" />
+      <option name="MAIN_CLASS_NAME" value="api.setup.ESSCreation" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -163,10 +168,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.Login.essLogin" />
+        <item itemvalue="TestNG.ESSCreation" />
         <item itemvalue="TestNG.ESSCreation.ESSCUserCreation" />
         <item itemvalue="TestNG.Login" />
         <item itemvalue="TestNG.Login.essAccountCreation" />
-        <item itemvalue="Application.ExtractToken" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725252958921</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Project setup class modified.">
+      <option name="closed" value="true" />
+      <created>1725255719278</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1725255719278</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -256,6 +269,7 @@
     <MESSAGE value="ESS account creation test is completed &amp; validated." />
     <MESSAGE value="ESS Login test completed." />
     <MESSAGE value="Project structure updated." />
-    <option name="LAST_COMMIT_MESSAGE" value="Project structure updated." />
+    <MESSAGE value="Project setup class modified." />
+    <option name="LAST_COMMIT_MESSAGE" value="Project setup class modified." />
   </component>
 </project>
