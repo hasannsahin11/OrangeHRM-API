@@ -16,8 +16,6 @@ import static io.restassured.RestAssured.given;
 public class Login extends ApiTestSetup {
 
     Cookies cookies;
-    EssUser essUser = new EssUser();
-
 
     @Test
     public void essLogin() {

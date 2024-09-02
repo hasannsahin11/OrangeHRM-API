@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="ESS Login test completed.">
+    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="Project structure updated.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/setup/ESSCreation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/features/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/features/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" afterDir="false" />
     </list>
@@ -61,6 +63,7 @@
     "TestNG.ApiTestSetup.essAccountCreation.executor": "Run",
     "TestNG.ApiTestSetup.executor": "Run",
     "TestNG.ApiTestSetup.loginWithToken.executor": "Run",
+    "TestNG.ESSCreation.ESSCUserCreation.executor": "Run",
     "TestNG.Login.adminLogin.executor": "Run",
     "TestNG.Login.essAccountCreation.executor": "Run",
     "TestNG.Login.essLogin.executor": "Run",
@@ -68,8 +71,8 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/hasan/IdeaProjects/OrangeHRM",
-    "settings.editor.selected.configurable": "inlay.hints"
+    "last_opened_file_path": "C:/Users/hasan/IdeaProjects/Java",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RunManager" selected="TestNG.Login.essLogin">
@@ -86,8 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="api.setup.SeleniumLogin" />
+    <configuration name="ESSCreation.ESSCUserCreation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRM-API" />
       <extension name="coverage">
         <pattern>
@@ -95,6 +97,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="api.setup" />
+      <option name="MAIN_CLASS_NAME" value="api.setup.ESSCreation" />
+      <option name="METHOD_NAME" value="ESSCUserCreation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,10 +163,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.Login.essLogin" />
+        <item itemvalue="TestNG.ESSCreation.ESSCUserCreation" />
         <item itemvalue="TestNG.Login" />
         <item itemvalue="TestNG.Login.essAccountCreation" />
         <item itemvalue="Application.ExtractToken" />
-        <item itemvalue="Application.SeleniumLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725252387251</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Project structure updated.">
+      <option name="closed" value="true" />
+      <created>1725252958921</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725252958921</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -239,6 +255,7 @@
     <MESSAGE value="_token cpature with Selenium has been completed." />
     <MESSAGE value="ESS account creation test is completed &amp; validated." />
     <MESSAGE value="ESS Login test completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="ESS Login test completed." />
+    <MESSAGE value="Project structure updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Project structure updated." />
   </component>
 </project>
