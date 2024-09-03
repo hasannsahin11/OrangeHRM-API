@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="Project setup class modified.">
+    <list default="true" id="db132f83-3a9f-4d5b-a58a-d15d64905211" name="Changes" comment="Request / Response Specs have been added to setup() and implemented in Login class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/features/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/features/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/setup/ApiTestSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/Setup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/setup/ESSCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/ESSCreation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/setup/Setup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/setup/Setup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,9 @@
     "TestNG.Login.adminLogin.executor": "Run",
     "TestNG.Login.essAccountCreation.executor": "Run",
     "TestNG.Login.essLogin.executor": "Run",
+    "TestNG.Login.essLoginNegative.executor": "Run",
     "TestNG.Login.executor": "Run",
+    "TestNG.Login.testLoginWithInvalidCredentials.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -76,7 +78,7 @@
     "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.Login.essLogin">
+  <component name="RunManager" selected="TestNG.Login.essLoginNegative">
     <configuration name="ESSCreation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRM-API" />
       <extension name="coverage">
@@ -112,41 +114,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Login" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OrangeHRM-API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.features.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api.features" />
-      <option name="MAIN_CLASS_NAME" value="api.features.Login" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Login.essAccountCreation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OrangeHRM-API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.features.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api.features" />
-      <option name="MAIN_CLASS_NAME" value="api.features.Login" />
-      <option name="METHOD_NAME" value="essAccountCreation" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Login.essLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OrangeHRM-API" />
       <extension name="coverage">
@@ -165,13 +132,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Login.essLoginNegative" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OrangeHRM-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.features" />
+      <option name="MAIN_CLASS_NAME" value="api.features.Login" />
+      <option name="METHOD_NAME" value="essLoginNegative" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Login.testLoginWithInvalidCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OrangeHRM-API" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.features" />
+      <option name="MAIN_CLASS_NAME" value="api.features.Login" />
+      <option name="METHOD_NAME" value="testLoginWithInvalidCredentials" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Login.essLoginNegative" />
         <item itemvalue="TestNG.Login.essLogin" />
         <item itemvalue="TestNG.ESSCreation" />
+        <item itemvalue="TestNG.Login.testLoginWithInvalidCredentials" />
         <item itemvalue="TestNG.ESSCreation.ESSCUserCreation" />
-        <item itemvalue="TestNG.Login" />
-        <item itemvalue="TestNG.Login.essAccountCreation" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725255719278</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Request / Response Specs have been added to setup() and implemented in Login class.">
+      <option name="closed" value="true" />
+      <created>1725319469071</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1725319469071</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -270,6 +281,7 @@
     <MESSAGE value="ESS Login test completed." />
     <MESSAGE value="Project structure updated." />
     <MESSAGE value="Project setup class modified." />
-    <option name="LAST_COMMIT_MESSAGE" value="Project setup class modified." />
+    <MESSAGE value="Request / Response Specs have been added to setup() and implemented in Login class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Request / Response Specs have been added to setup() and implemented in Login class." />
   </component>
 </project>
