@@ -44,16 +44,21 @@ public class Login extends Setup {
     @Test(dataProvider = "loginCredentials")
     public void essLoginNegative(String username, String password) {
 
+        Map<String, String> jsonBody = new HashMap<>();
+        jsonBody.put("username", username);
+        jsonBody.put("password", password);
+
         given()
-                .request().formParam("username", username)
-                .request().formParam("password", password)
-//                .contentType(ContentType.JSON)
+                .body(jsonBody)
+                .contentType(ContentType.JSON)
+                .log().uri()
+                .log().body()
 
                 .when()
                 .post("/web/index.php/auth/validate")
 
                 .then()
-                .statusCode(400)
+                .statusCode(302)
                 .log().all();
     }
 
